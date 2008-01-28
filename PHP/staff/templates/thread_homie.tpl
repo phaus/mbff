@@ -1,0 +1,1 @@
+<a href="usercp.php?action=buddy&add=$posts[userid]&sid=$session[hash]"><img src="{imagefolder}/homie.gif" border=0 alt="Add $posts[username] to your Buddy List"></a>

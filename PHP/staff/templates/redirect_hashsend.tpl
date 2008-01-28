@@ -1,0 +1,1 @@
+You will receive a short email with more information on how to get a new password.

@@ -1,0 +1,1 @@
+<img src="{imagefolder}/user_online.gif" border=0 alt="$posts[username] is online">

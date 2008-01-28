@@ -1,0 +1,1 @@
+ ... <a href="thread.php?threadid=$threads[threadid]&page=$xpages&sid=$session[hash]">last page</a>

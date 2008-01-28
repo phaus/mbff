@@ -1,0 +1,1 @@
+You cannot add yourself to your list.

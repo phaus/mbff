@@ -1,0 +1,1 @@
+<a href="newthread.php?boardid=$boardid&sid=$session[hash]"><img src="{imagefolder}/newthread.gif" border=0 alt="Post New Thread"></a>

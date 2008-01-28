@@ -1,0 +1,1 @@
+<a href="misc.php?action=formmail&userid=$posts[userid]&boardid=$boardid$session"><img src="{imagefolder}/email.gif" height="15" border=0 alt="Send an Email to $posts[username]"></a>

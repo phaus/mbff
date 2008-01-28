@@ -1,0 +1,1 @@
+New password for your account at $master_board_name

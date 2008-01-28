@@ -1,0 +1,1 @@
+<img src="{imagefolder}/user_offline.gif" border=0 alt="$posts[username] is offline">

@@ -1,0 +1,1 @@
+<td align="center">$avatarArray[$count]&nbsp;</td>

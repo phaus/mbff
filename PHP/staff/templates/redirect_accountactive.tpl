@@ -1,0 +1,1 @@
+Your account was successfully activated. You can now login with your username and password.

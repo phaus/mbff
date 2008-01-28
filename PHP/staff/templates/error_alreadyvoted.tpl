@@ -1,0 +1,1 @@
+You already voted in this poll.

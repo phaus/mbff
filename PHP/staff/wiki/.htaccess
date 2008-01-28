@@ -1,0 +1,8 @@
+#access-Datei für Web-Verzeichnis /service
+AuthType Basic
+AuthName "MBFF STAFF WIKI"
+#
+AuthUserFile /srv/www/web11/html/staff/.htusers
+#
+Require user timo philipp gast
+#

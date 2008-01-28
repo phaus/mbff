@@ -1,0 +1,1 @@
+This address/url is invalid. If you clicked on a link, please inform the <a href="mailto:$adminmail">Administrator</a>.

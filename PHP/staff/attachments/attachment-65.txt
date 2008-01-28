@@ -1,0 +1,474 @@
+ Verzeichnis von ...\mbff
+
+09.06.2005  01:33    <DIR>          .
+09.06.2005  01:33    <DIR>          ..
+09.06.2005  01:34                 0 dir.txt
+30.05.2005  16:16               723 impressum.php
+30.05.2005  15:19    <DIR>          include
+31.05.2005  11:26               978 index.php
+09.06.2005  01:32             2.722 login.php
+30.05.2005  15:08    <DIR>          run
+09.06.2005  00:40             2.305 session.php
+01.05.2005  00:11               449 show_log.php
+09.06.2005  00:34               646 status.php
+09.06.2005  00:00    <DIR>          tmp
+30.05.2005  16:35    <DIR>          web
+30.05.2005  16:12    <DIR>          xml
+               7 Datei(en)          7.823 Bytes
+
+ Verzeichnis von ...\mbff\include
+
+30.05.2005  15:19    <DIR>          .
+30.05.2005  15:19    <DIR>          ..
+31.05.2005  11:17             2.602 base_config.php
+30.05.2005  15:22             2.594 base_functions.php
+30.05.2005  15:04               707 base_settings.php
+30.05.2005  15:04    <DIR>          class
+30.05.2005  15:04             1.137 image_functions.php
+09.06.2005  00:45             1.359 login_functions.php
+30.05.2005  15:04    <DIR>          netz
+30.05.2005  15:04             4.139 session_functions.php
+               6 Datei(en)         12.538 Bytes
+
+ Verzeichnis von ...\mbff\include\class
+
+30.05.2005  15:04    <DIR>          .
+30.05.2005  15:04    <DIR>          ..
+30.05.2005  15:04    <DIR>          base
+30.05.2005  15:04             4.993 class_avatar.php
+30.05.2005  15:04             1.876 class_caching.php
+30.05.2005  15:04             4.168 class_data.php
+30.05.2005  15:04             4.287 class_db.php
+30.05.2005  15:40             1.937 class_debug.php
+30.05.2005  15:04             2.830 class_fieldmap.php
+30.05.2005  15:04            24.307 class_formular.php
+30.05.2005  15:04             4.745 class_map_fw.php
+30.05.2005  15:04             1.035 class_orb.php
+30.05.2005  15:04               233 class_orb_list.php
+30.05.2005  15:04             1.134 class_person.php
+30.05.2005  15:04             1.309 class_star.php
+30.05.2005  15:04             2.456 class_system.php
+30.05.2005  15:04               214 class_system_list.php
+30.05.2005  15:04               188 class_techtree.php
+30.05.2005  15:04             1.321 class_unit.php
+30.05.2005  15:04               991 class_user.php
+30.05.2005  15:04             1.188 class_vehicle.php
+              18 Datei(en)         59.212 Bytes
+
+ Verzeichnis von ...\mbff\include\class\base
+
+30.05.2005  15:04    <DIR>          .
+30.05.2005  15:04    <DIR>          ..
+30.05.2005  15:04             3.767 class_data.php
+30.05.2005  15:04             3.399 class_data_list.php
+30.05.2005  15:04             2.711 class_data_tree.php
+               3 Datei(en)          9.877 Bytes
+
+ Verzeichnis von ...\mbff\include\netz
+
+30.05.2005  15:04    <DIR>          .
+30.05.2005  15:04    <DIR>          ..
+30.05.2005  15:04             2.497 base_config.php
+30.05.2005  15:04             1.598 base_config_old.php
+30.05.2005  15:04             2.482 base_config_old2.php
+               3 Datei(en)          6.577 Bytes
+
+ Verzeichnis von ...\mbff\run
+
+30.05.2005  15:08    <DIR>          .
+30.05.2005  15:08    <DIR>          ..
+01.04.2005  23:09                 0 run.php
+               1 Datei(en)              0 Bytes
+
+ Verzeichnis von ...\mbff\tmp
+
+09.06.2005  00:00    <DIR>          .
+09.06.2005  00:00    <DIR>          ..
+30.05.2005  22:35             1.558 debug_2005_05_30.log
+31.05.2005  11:52            54.387 debug_2005_05_31.log
+08.06.2005  23:59             3.678 debug_2005_06_8.log
+09.06.2005  01:32           157.249 debug_2005_06_9.log
+               4 Datei(en)        216.872 Bytes
+
+ Verzeichnis von ...\mbff\web
+
+30.05.2005  16:35    <DIR>          .
+30.05.2005  16:35    <DIR>          ..
+01.05.2005  00:11                11 account.php
+01.05.2005  00:11             1.675 account_settings.php
+30.05.2005  16:35    <DIR>          cache
+01.04.2005  23:09               581 cache_relink.php
+01.04.2005  23:09               447 cache_test.php
+09.06.2005  01:02               490 error.php
+01.05.2005  00:11               911 form_test.php
+30.05.2005  16:14    <DIR>          images
+01.05.2005  00:11               879 impressum.php
+30.05.2005  15:19    <DIR>          include
+09.06.2005  01:25             1.420 index.php
+30.05.2005  16:10               732 logout.php
+01.05.2005  03:58             4.574 map.php
+01.05.2005  00:11             1.107 map_test.php
+01.05.2005  00:11                18 phpinfo.php
+01.05.2005  00:11             4.433 planet_build.php
+01.05.2005  00:11                99 README.txt
+01.05.2005  00:11             2.648 register.php
+30.05.2005  15:37             2.486 session.php
+01.05.2005  00:11               449 show_log.php
+30.05.2005  15:22    <DIR>          styles
+01.05.2005  00:11             3.532 system_build.php
+01.05.2005  00:11             1.467 system_info.php
+30.05.2005  15:08    <DIR>          templates
+01.04.2005  23:09             1.111 test.php
+29.05.2005  15:27             1.058 TEST_avatar.php
+01.05.2005  00:11               534 TEST_cache.php
+01.05.2005  00:11               581 TEST_cache_BENCH.php
+01.05.2005  00:11             1.222 TEST_map.php
+01.05.2005  00:11               357 TEST_mapframe.php
+01.05.2005  00:11             1.111 TEST_misc.php
+01.05.2005  00:11               676 TEST_orb.php
+01.05.2005  00:11               426 TEST_system_list.php
+01.05.2005  00:11               466 TEST_techtree.php
+01.05.2005  00:11                 9 TEST_tree.php
+01.05.2005  00:11               569 TEST_user.php
+01.05.2005  00:11             3.491 user_avatar.php
+30.05.2005  15:24    <DIR>          world
+              32 Datei(en)         39.570 Bytes
+
+ Verzeichnis von ...\mbff\web\cache
+
+30.05.2005  16:35    <DIR>          .
+30.05.2005  16:35    <DIR>          ..
+30.05.2005  16:35    <DIR>          html
+30.05.2005  16:35    <DIR>          imgs
+               0 Datei(en)              0 Bytes
+
+ Verzeichnis von ...\mbff\web\cache\html
+
+30.05.2005  16:35    <DIR>          .
+30.05.2005  16:35    <DIR>          ..
+               0 Datei(en)              0 Bytes
+
+ Verzeichnis von ...\mbff\web\cache\imgs
+
+30.05.2005  16:35    <DIR>          .
+30.05.2005  16:35    <DIR>          ..
+               0 Datei(en)              0 Bytes
+
+ Verzeichnis von ...\mbff\web\images
+
+30.05.2005  16:14    <DIR>          .
+30.05.2005  16:14    <DIR>          ..
+01.04.2005  23:09           116.922 12b.jpg
+01.04.2005  23:09               588 b_tile.png
+01.04.2005  23:09             1.210 dot.gif
+01.04.2005  23:09             2.274 Kopie (2) von trans_tiles_small.png
+01.04.2005  23:09             1.914 Kopie (3) von trans_tiles_small.png
+01.04.2005  23:09             1.393 Kopie von trans_tiles_small.png
+01.04.2005  23:09             1.267 mars_tile_small.png
+01.04.2005  23:09               104 Picasa.ini
+01.04.2005  23:09             7.594 planet.gif
+01.04.2005  23:09             2.450 sonne.gif
+01.04.2005  23:09               532 square.gif
+01.04.2005  23:09             5.452 t.space.gif
+01.04.2005  23:09               459 trans_tiles_small.png
+01.04.2005  23:09             7.653 trans_tiles_small_24.png
+01.04.2005  23:09               528 trans_tiles_small_pushed.png
+01.04.2005  23:09             5.369 trans_tiles_small_single.png
+01.04.2005  23:09             1.393 Unbenannt-1.png
+              17 Datei(en)        157.102 Bytes
+
+ Verzeichnis von ...\mbff\web\include
+
+30.05.2005  15:19    <DIR>          .
+30.05.2005  15:19    <DIR>          ..
+09.06.2005  00:08               113 base_config.php
+30.05.2005  15:29               735 onstartup.php
+               2 Datei(en)            848 Bytes
+
+ Verzeichnis von ...\mbff\web\styles
+
+30.05.2005  15:22    <DIR>          .
+30.05.2005  15:22    <DIR>          ..
+30.05.2005  15:22    <DIR>          main
+               0 Datei(en)              0 Bytes
+
+ Verzeichnis von ...\mbff\web\styles\main
+
+30.05.2005  15:22    <DIR>          .
+30.05.2005  15:22    <DIR>          ..
+30.05.2005  16:29             2.351 style.css
+01.05.2005  00:11             2.069 style.css.php
+               2 Datei(en)          4.420 Bytes
+
+ Verzeichnis von ...\mbff\web\templates
+
+30.05.2005  15:08    <DIR>          .
+30.05.2005  15:08    <DIR>          ..
+09.06.2005  01:23    <DIR>          de
+30.05.2005  16:33    <DIR>          en
+               0 Datei(en)              0 Bytes
+
+ Verzeichnis von ...\mbff\web\templates\de
+
+09.06.2005  01:23    <DIR>          .
+09.06.2005  01:23    <DIR>          ..
+01.05.2005  00:11               414 account_settings.tpl
+09.06.2005  01:22               134 adminmenu.tpl
+01.05.2005  00:11               651 avatar_image.tpl
+01.05.2005  00:11               456 avatar_list.tpl
+01.05.2005  00:11               231 avatar_list_row.tpl
+29.05.2005  15:22               598 avatar_new.tpl
+01.05.2005  00:11               752 avatar_set.tpl
+01.05.2005  00:11               268 error.tpl
+01.05.2005  00:11               639 field.tpl
+01.05.2005  00:11               358 game_galaxy.tpl
+01.05.2005  00:11               175 game_galaxy_bit.tpl
+01.05.2005  00:11               161 game_system_map.tpl
+01.05.2005  00:11               528 game_system_map_bit.tpl
+01.05.2005  00:11               349 game_system_map_planet_bit.tpl
+01.05.2005  00:11               249 game_system_map_unit_bit.tpl
+30.05.2005  16:31             1.733 impressum.tpl
+30.05.2005  15:30               542 index.tpl
+01.05.2005  00:11               448 js.tpl
+30.05.2005  16:32             1.074 login.tpl
+01.05.2005  00:11               712 main_links.tpl
+01.05.2005  00:11               204 map_nav_bottom.tpl
+01.05.2005  00:11                 6 map_nav_links.tpl
+01.05.2005  00:11               427 map_nav_top.tpl
+01.05.2005  00:11               781 menu_js.tpl
+01.05.2005  00:11               456 menu_lo.tpl
+17.04.2005  19:47             2.795 menu_lo_js.tpl
+09.06.2005  01:29               231 menu_main.tpl
+01.05.2005  00:11               158 nav_frame.tpl
+01.05.2005  00:11               946 register.tpl
+01.05.2005  00:11               315 register_activ.tpl
+01.05.2005  00:11               171 register_email.tpl
+01.05.2005  00:11                19 register_email_subject.tpl
+01.05.2005  00:11               407 register_finish.tpl
+01.05.2005  00:11                74 settings_drop_down.tpl
+01.05.2005  00:11               198 settings_row.tpl
+01.05.2005  00:11               205 settings_switch_off.tpl
+01.05.2005  00:11               205 settings_switch_on.tpl
+01.05.2005  00:11               257 set_lang.tpl
+09.06.2005  01:23                70 staffmenu.tpl
+01.05.2005  00:11               348 system_info.tpl
+09.06.2005  01:28               109 usermenu.tpl
+01.05.2005  00:11               538 webindex.tpl
+              42 Datei(en)         19.392 Bytes
+
+ Verzeichnis von ...\mbff\web\templates\en
+
+30.05.2005  16:33    <DIR>          .
+30.05.2005  16:33    <DIR>          ..
+01.05.2005  00:11               414 account_settings.tpl
+01.05.2005  00:11               651 avatar_image.tpl
+01.05.2005  00:11               456 avatar_list.tpl
+01.05.2005  00:11               231 avatar_list_row.tpl
+29.05.2005  15:22               598 avatar_new.tpl
+01.05.2005  00:11               752 avatar_set.tpl
+01.05.2005  00:11               268 error.tpl
+01.05.2005  00:11               540 field.tpl
+01.05.2005  00:11               358 game_galaxy.tpl
+01.05.2005  00:11               175 game_galaxy_bit.tpl
+01.05.2005  00:11               161 game_system_map.tpl
+01.05.2005  00:11               528 game_system_map_bit.tpl
+01.05.2005  00:11               317 game_system_map_content_bit.tpl
+01.05.2005  00:11               349 game_system_map_planet_bit.tpl
+01.05.2005  00:11               249 game_system_map_unit_bit.tpl
+30.05.2005  16:31             1.733 impressum.tpl
+30.05.2005  15:30               542 index.tpl
+01.05.2005  00:11               448 js.tpl
+30.05.2005  16:32             1.074 login.tpl
+01.05.2005  00:11               692 main_links.tpl
+01.05.2005  00:11                 6 map_nav_links.tpl
+01.05.2005  00:11               264 map_nav_top.tpl
+01.05.2005  00:11               456 menu_lo.tpl
+01.05.2005  00:11             2.795 menu_lo_js.tpl
+01.05.2005  00:11               128 menu_main.tpl
+01.05.2005  00:11               891 register.tpl
+01.05.2005  00:11               315 register_activ.tpl
+01.05.2005  00:11               171 register_email.tpl
+01.05.2005  00:11                19 register_email_subject.tpl
+01.05.2005  00:11               407 register_finish.tpl
+01.05.2005  00:11                74 settings_drop_down.tpl
+01.05.2005  00:11               198 settings_row.tpl
+01.05.2005  00:11               205 settings_switch_off.tpl
+01.05.2005  00:11               205 settings_switch_on.tpl
+01.05.2005  00:11               257 set_lang.tpl
+01.05.2005  00:11               348 system_info.tpl
+01.05.2005  00:11               538 webindex.tpl
+              37 Datei(en)         17.813 Bytes
+
+ Verzeichnis von ...\mbff\web\world
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+30.05.2005  15:24    <DIR>          avatars
+30.05.2005  15:24    <DIR>          backgrounds
+30.05.2005  15:24    <DIR>          fonts
+30.05.2005  15:24    <DIR>          planets
+30.05.2005  15:24    <DIR>          symbols
+30.05.2005  15:24    <DIR>          system
+30.05.2005  15:24    <DIR>          units
+               0 Datei(en)              0 Bytes
+
+ Verzeichnis von ...\mbff\web\world\avatars
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+01.05.2005  00:11             9.624 4211224bee2531.png
+01.05.2005  00:11             1.581 no_ava.jpg
+               2 Datei(en)         11.205 Bytes
+
+ Verzeichnis von ...\mbff\web\world\backgrounds
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+01.05.2005  00:11           116.922 12b.jpg
+               1 Datei(en)        116.922 Bytes
+
+ Verzeichnis von ...\mbff\web\world\fonts
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+01.05.2005  00:11           379.588 tahoma.ttf
+               1 Datei(en)        379.588 Bytes
+
+ Verzeichnis von ...\mbff\web\world\planets
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+30.05.2005  15:24    <DIR>          iso
+               0 Datei(en)              0 Bytes
+
+ Verzeichnis von ...\mbff\web\world\planets\iso
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+01.05.2005  00:11             2.637 planet_class_t.gif
+               1 Datei(en)          2.637 Bytes
+
+ Verzeichnis von ...\mbff\web\world\symbols
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+01.05.2005  00:11               410 star.jpg
+01.05.2005  00:11               885 star1.png
+01.05.2005  00:11               588 star2.png
+               3 Datei(en)          1.883 Bytes
+
+ Verzeichnis von ...\mbff\web\world\system
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+30.05.2005  15:24    <DIR>          fields
+30.05.2005  15:24    <DIR>          flags
+30.05.2005  15:24    <DIR>          icons
+               0 Datei(en)              0 Bytes
+
+ Verzeichnis von ...\mbff\web\world\system\fields
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+30.05.2005  15:24    <DIR>          hex
+30.05.2005  15:24    <DIR>          hex3d
+30.05.2005  15:24    <DIR>          iso
+               0 Datei(en)              0 Bytes
+
+ Verzeichnis von ...\mbff\web\world\system\fields\hex
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+01.05.2005  00:11               844 trans_tiles_small.png
+01.05.2005  00:11               859 trans_tiles_small_pushed.png
+               2 Datei(en)          1.703 Bytes
+
+ Verzeichnis von ...\mbff\web\world\system\fields\hex3d
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+01.05.2005  00:11               688 trans_tiles_small.png
+01.05.2005  00:11               806 trans_tiles_small_pushed.png
+               2 Datei(en)          1.494 Bytes
+
+ Verzeichnis von ...\mbff\web\world\system\fields\iso
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+01.05.2005  00:11               459 trans_tiles_small.png
+01.05.2005  00:11               528 trans_tiles_small_pushed.png
+               2 Datei(en)            987 Bytes
+
+ Verzeichnis von ...\mbff\web\world\system\flags
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+01.05.2005  00:11               240 de.png
+01.05.2005  00:11               275 de_grey.png
+01.05.2005  00:11               261 en.png
+01.05.2005  00:11               290 en_grey.png
+01.05.2005  00:11               236 fr.png
+01.05.2005  00:11               266 fr_grey.png
+01.05.2005  00:11               231 it.png
+01.05.2005  00:11               243 it_grey.png
+               8 Datei(en)          2.042 Bytes
+
+ Verzeichnis von ...\mbff\web\world\system\icons
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+01.05.2005  00:11               518 led_off.png
+01.05.2005  00:11               900 led_on.png
+01.05.2005  00:11             2.438 switch_off.png
+01.05.2005  00:11             2.440 switch_on.png
+               4 Datei(en)          6.296 Bytes
+
+ Verzeichnis von ...\mbff\web\world\units
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+30.05.2005  15:24    <DIR>          spaceships
+               0 Datei(en)              0 Bytes
+
+ Verzeichnis von ...\mbff\web\world\units\spaceships
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+30.05.2005  15:24    <DIR>          iso
+               0 Datei(en)              0 Bytes
+
+ Verzeichnis von ...\mbff\web\world\units\spaceships\iso
+
+30.05.2005  15:24    <DIR>          .
+30.05.2005  15:24    <DIR>          ..
+01.05.2005  00:11               240 blank.gif
+01.05.2005  00:11             2.255 cruiser2.gif
+01.05.2005  00:11             2.011 dummy-cruiser.gif
+01.05.2005  03:55             1.673 talerion-cruiser1.gif
+               4 Datei(en)          6.179 Bytes
+
+ Verzeichnis von ...\mbff\xml
+
+30.05.2005  16:12    <DIR>          .
+30.05.2005  16:12    <DIR>          ..
+30.05.2005  15:53    <DIR>          include
+30.05.2005  16:09               740 index.php
+01.05.2005  00:11               717 logout.php
+30.05.2005  15:54             2.488 session.php
+01.05.2005  22:52             1.216 xml_info.php
+01.05.2005  00:14             1.169 xml_out_galaxy.php
+01.05.2005  00:14                 0 xml_out_planet.php
+01.05.2005  00:14               302 xml_out_system.php
+01.05.2005  22:39               124 xml_Test.php
+               8 Datei(en)          6.756 Bytes
+
+ Verzeichnis von ...\mbff\xml\include
+
+30.05.2005  15:53    <DIR>          .
+30.05.2005  15:53    <DIR>          ..
+09.06.2005  00:08               113 base_config.php
+               1 Datei(en)            113 Bytes
+
+     Anzahl der angezeigten Dateien:
+             213 Datei(en)      1.089.849 Bytes
+             110 Verzeichnis(se),  7.810.637.824 Bytes frei

@@ -1,0 +1,1 @@
+New Private Message at $master_board_name

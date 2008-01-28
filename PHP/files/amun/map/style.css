@@ -1,0 +1,17 @@
+@import url("style2.css");
+	.alpha
+	{
+	-moz-opacity:0.75;
+	filter:Alpha(Opacity=75);
+	border : 1px groove #dddddd;
+	border-left-width : 0px;
+	border-top-width : 0px;
+	background-color: #999999;
+	color:#eeeeee;
+	}
+	
+	body {
+	background-image: url(images/t.space.gif);
+	background-repeat: repeat;
+	margin: 0px;
+	}

@@ -1,0 +1,1 @@
+<a href="pms.php?action=newpm&userid=$members[userid]&sid=$session[hash]"><img src="{imagefolder}/pm.gif" border=0 alt="Send a private message to $members[username]"></a>

@@ -1,0 +1,1 @@
+<a href="http://wwp.icq.com/scripts/search.dll?to=$posts[icq]"><img src="http://wwp.icq.com/scripts/online.dll?icq=$posts[icq]&img=5" width=18 height=18 border=0 alt="Add $posts[username] to your Contact List"></a>

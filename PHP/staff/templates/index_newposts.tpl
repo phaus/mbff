@@ -1,0 +1,1 @@
+<img src="{imagefolder}/on.gif" alt="New posts">

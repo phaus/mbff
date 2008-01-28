@@ -1,0 +1,1 @@
+<li>Posting multiple posts within $fctime seconds is not allow.</li>

@@ -1,0 +1,1 @@
+You have chosen too many answers. Please reduce the number of answers to $poll[choicecount].

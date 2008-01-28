@@ -1,0 +1,1 @@
+Please enter a word or a username you want to search for.

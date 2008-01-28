@@ -1,0 +1,1 @@
+<a href="formmail.php?userid=$members[userid]&sid=$session[hash]"><img src="{imagefolder}/email.gif" border=0 alt="Send an email to $members[username]"></a>

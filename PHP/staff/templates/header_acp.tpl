@@ -1,0 +1,1 @@
+<a href="acp/index.php?sid=$session[hash]" target="_blank"><img src="{imagefolder}/top_acp.gif" border=0 alt="Admin Control Panel"></a>

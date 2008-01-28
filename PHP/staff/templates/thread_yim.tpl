@@ -1,0 +1,1 @@
+<a href="http://edit.yahoo.com/config/send_webmesg?.target=$posts[yim]&.src=pg"><img src="{imagefolder}/yim.gif" border=0 alt="YIM Screenname: $posts[yim]"></a>

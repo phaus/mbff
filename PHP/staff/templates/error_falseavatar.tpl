@@ -1,0 +1,1 @@
+Your avatar does not match the maximum size, width or height.

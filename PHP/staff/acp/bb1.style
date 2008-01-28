@@ -1,0 +1,51 @@
+Standard~~~Standard~~~-1
+<body~~~<body bgcolor="#004671" text="#000000"~~~{tableoutbordercolor}~~~#ffffff~~~{tableinbordercolor}~~~#000000~~~{tabletitlecolor}~~~#0B6295~~~{tablecolora}~~~#f5f5f5~~~{tablecolorb}~~~#EDEDED~~~{fontcolorsecond}~~~#ffffff~~~{fontcolorthird}~~~#ffffff~~~{tablecatcolor}~~~#3F92D9~~~{tableinwidth}~~~98%~~~{timecolor}~~~#000000~~~{imagefolder}~~~images~~~<hilight>~~~<font color="red"><b>~~~</hilight>~~~</b></font>~~~{inposttablecolor}~~~#ffffff~~~{prefixcolor}~~~#000000~~~{mainbgcolor}~~~#0B6295~~~{css}~~~BODY { SCROLLBAR-BASE-COLOR: #0B6295; SCROLLBAR-ARROW-COLOR: #FFFFFF; }
+SELECT {
+ FONT-SIZE: 12px;
+ FONT-FAMILY: Tahoma,Helvetica;
+ COLOR: #000000;
+ BACKGROUND-COLOR: #CFCFCF;
+}
+
+TEXTAREA {
+ FONT-SIZE: 12px;
+ FONT-FAMILY: Tahoma,Helvetica;
+ COLOR: #000000;
+ BACKGROUND-COLOR: #CFCFCF;
+}
+
+.input {
+ FONT-SIZE: 12px;
+ FONT-FAMILY: Tahoma,Helvetica;
+ COLOR: #000000;
+ BACKGROUND-COLOR: #CFCFCF;
+ 
+ border-top-width : 1px;
+ border-right-width : 1px;
+ border-bottom-width : 1px;
+ border-left-width : 1px;
+ text-indent : 2px;
+}
+.topnavi {
+	padding-right: 5px;
+	padding-bottom: 18px;
+	padding-left: 5px;
+}
+
+#bg A:link, #bg A:visited, #bg A:active { COLOR: #000000; TEXT-DECORATION: underline; }
+#bg A:hover { COLOR: #000000; TEXT-DECORATION: none; }
+
+#tablea A:link, #tablea A:visited, #tablea A:active { COLOR: #000000; TEXT-DECORATION: underline; }
+#tablea A:hover { COLOR: #000000; TEXT-DECORATION: none; }
+
+#tableb A:link, #tableb A:visited, #tableb A:active { COLOR: #000000; TEXT-DECORATION: underline; }
+#tableb A:hover { COLOR: #000000; TEXT-DECORATION: none; }
+
+#tablecat A:link, #tablecat A:visited, #tablecat A:active { COLOR: #ffffff; TEXT-DECORATION: underline; }
+#tablecat A:hover { COLOR: #ffffff; TEXT-DECORATION: none; }
+
+#tabletitle A:link, #tabletitle A:visited, #tabletitle A:active { COLOR: #000000; TEXT-DECORATION: none; }
+#tabletitle A:hover { COLOR: #000000; TEXT-DECORATION: underline; }
+
+#tabletitle { background-image: url(images/cellpic.gif); }
+.clsCursor {  cursor: hand}~~~{cssfile}~~~ ~~~{imageback}~~~background="images/back.gif"~~~{imagelogo}~~~<img src="images/logo.gif" border=0>~~~<smallfont~~~<font face="Tahoma,Helvetica" size="1"~~~<normalfont~~~<font face="Tahoma,Helvetica" size="2"~~~{!DOCTYPE}~~~<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">~~~{tableoutwidth}~~~100%~~~

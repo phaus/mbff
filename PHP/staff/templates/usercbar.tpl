@@ -1,0 +1,1 @@
+» Hello $wbbuserdata[username] [<a href="logout.php?sid=$session[hash]">logout</a>]

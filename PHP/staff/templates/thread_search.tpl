@@ -1,0 +1,1 @@
+<a href="search.php?action=user&userid=$posts[userid]&sid=$session[hash]"><img src="{imagefolder}/search.gif" border=0 alt="Search for Posts by $posts[username]"></a>

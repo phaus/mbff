@@ -1,0 +1,1 @@
+» Hello Guest [<a href="login.php?sid=$session[hash]">login</a>|<a href="register.php?sid=$session[hash]">register</a>]

@@ -1,0 +1,1 @@
+$wbbuserdata[username], you were successfully logged out.

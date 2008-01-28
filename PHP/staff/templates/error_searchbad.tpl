@@ -1,0 +1,1 @@
+Your search is invalid, please note that a search word has to be at least $minwordlength charaters and has to be less than $maxwordlength characters.<br>

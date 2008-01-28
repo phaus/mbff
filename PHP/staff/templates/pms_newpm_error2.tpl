@@ -1,0 +1,1 @@
+<li>The user "$recipient" doesn't want to receive any private messages.</li>

@@ -1,0 +1,1 @@
+<a href="polledit.php?pollid=$thread[pollid]&sid=$session[hash]">Edit Poll</a>

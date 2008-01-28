@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="center">Welcome to WoltLab Burning Board Lite Admin Control Panel</p>
+<p>&nbsp;</p>
+<table cellpadding=4 cellspacing=1 border=0 class="tblborder" width="95%" align="center">
+ <tr class="tblhead">
+  <td colspan=2>wBB Information</td>
+ </tr>
+ <tr class="firstrow">
+  <td><b>Your wBB Version:</b></td>
+  <td>$boardversion</td>
+ </tr>
+ <tr class="secondrow">
+  <td><b>Installation Date:</b></td>
+  <td>$install_date</td>
+ </tr>
+ <tr class="firstrow">
+  <td><b>Members:</b></td>
+  <td>$usercount</td>
+ </tr>
+ <tr class="secondrow">
+  <td><b>Users online:</b></td>
+  <td>$useronlinecount</td>
+ </tr>
+ <tr class="firstrow">
+  <td><b>Posts:</b></td>
+  <td>$postcount ($postsperday per day)</td>
+ </tr>
+ <tr class="secondrow">
+  <td><b>Threads:</b></td>
+  <td>$threadcount ($threadsperday per day)</td>
+ </tr>
+ <tr class="firstrow">
+  <td colspan=2><a href="users.php?action=show&activation=-1&sid=$session[hash]&sortby=regdate&sortorder=DESC">$waiting4Activation users awaiting activation.</a></td>
+  </tr>
+</table>
+</body>
+</html>

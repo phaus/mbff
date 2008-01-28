@@ -1,0 +1,1 @@
+<img src="{imagefolder}/off.gif" alt="No new private messages">

@@ -1,0 +1,1 @@
+<a href="$current_url&hidecat=$boards[boardid]"><img src="{imagefolder}/minus.gif" border=0 alt="Hide Category &quot;$boards[title]&quot;"></a>

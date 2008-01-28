@@ -1,0 +1,1 @@
+<a href="pms.php?action=new&userid=$posts[userid]&boardid=$boardid$session"><img src="{imagefolder}/pn.gif" height="15" border=0 alt="Send a PM to $posts[username]"></a>

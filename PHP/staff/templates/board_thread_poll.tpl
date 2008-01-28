@@ -1,0 +1,1 @@
+<font color="{prefixcolor}"><b>Poll:</b></font> 

@@ -1,0 +1,1 @@
+New Reply in Thread: $thread[topic]

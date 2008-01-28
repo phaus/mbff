@@ -1,0 +1,1 @@
+<a href="$current_url&showcat=$boards[boardid]"><img src="{imagefolder}/plus.gif" border=0 alt="Show Category &quot;$boards[title]&quot;"></a>

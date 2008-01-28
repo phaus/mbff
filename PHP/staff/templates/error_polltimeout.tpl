@@ -1,0 +1,1 @@
+The poll is finished, you cannot vote anymore.

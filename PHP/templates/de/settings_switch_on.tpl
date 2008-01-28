@@ -1,0 +1,1 @@
+<a title="ausschalten" href="$url&switch=off"><img height="30" src="$sys_conf[img_sys]/icons/switch_on.png" alt="" border="0" /></a>&nbsp;<img alt="" src="$sys_conf[img_sys]/icons/led_on.png" border="0" />

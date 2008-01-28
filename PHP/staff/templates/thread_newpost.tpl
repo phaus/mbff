@@ -1,0 +1,1 @@
+<a href="thread.php?postid=$posts[postid]#post$posts[postid]"><img src="{imagefolder}/posticonnew.gif" border=0 alt="New Post"></a>

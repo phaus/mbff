@@ -1,0 +1,1 @@
+Smilies are <b>not</b> allowed<br>

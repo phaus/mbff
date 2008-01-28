@@ -1,0 +1,1 @@
+<b><a href="thread.php?goto=lastpost&threadid=$boards[lastthreadid]&sid=$session[hash]" title="$boards[topic]">$topic</a></b>

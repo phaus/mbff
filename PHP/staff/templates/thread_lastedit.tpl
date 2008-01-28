@@ -1,0 +1,1 @@
+<p><smallfont>This post has been edited $posts[editcount] time(s), it was last edited by $posts[editor] on $editdate at <font color="{timecolor}">$edittime</font>.</font></p>

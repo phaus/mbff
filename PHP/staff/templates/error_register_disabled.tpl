@@ -1,0 +1,1 @@
+Registrations are deactivated at the moment.

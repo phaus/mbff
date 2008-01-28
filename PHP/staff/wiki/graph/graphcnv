@@ -1,0 +1,265 @@
+#!/usr/bin/perl -Tw
+
+BEGIN
+  {
+  $|++;				# output buffer off
+  unshift @INC, 'lib';		# use local modules first
+  unshift @INC, 'graph/lib'	# use local modules first
+  }
+
+$VERSION = '0.21';
+
+use strict;
+# use warnings;			# be lean
+use Graph::Easy 0.48;
+use Graph::Easy::Parser;
+use Config::Tiny;
+use Encode qw/decode encode/;
+
+# wrong number of options?
+if (@ARGV < 1 || @ARGV > 3)
+  {
+  require Pod::Usage;		# do not load this unless nec.
+  Pod::Usage::pod2usage(-2);	# print help and exit
+  }
+
+my $error_page = 'http://bloodgate.com/perl/graph/manual/errors.html';
+my $cfg = Config::Tiny->read('graph/graph.cfg');
+my $timeout = abs($cfg->{graph}->{timeout} || 0) || 5;
+ 
+eval
+  {
+  local $SIG{ALRM} = sub { die "graphcnv took more than $timeout seconds to parse and layout graph##ERROR6##\n" };
+  alarm $timeout;
+
+  my $parser = Graph::Easy::Parser->new();
+
+  my $c = $cfg->{graph};
+  my $outdir = $c->{output} || 'images/graph';
+  my $wiki_prefix = $c->{prefix} || '/wiki/';
+  $wiki_prefix .= '/' unless $wiki_prefix =~ /\//;
+
+  $c = $cfg->{graphviz};
+  my $dot = $c->{renderer} || 'dot';
+  my $format = $c->{format} || 'png';
+  $c = $cfg->{errors};
+  $error_page = $c->{manual} if $c->{manual};
+
+  # untaint config variables
+  $format =~ /([a-z0-9_]+)/i; $format = $1;
+  $dot =~ /([a-z0-9_\/]+)/i; $dot = $1; $dot = 'dot' unless -e $dot;
+  $error_page =~ /([a-z0-9\/:_\.-]+)/i; $error_page = $1;
+  $wiki_prefix =~ /([a-z0-9\/:_-]+)/i; $wiki_prefix = $1;
+  $outdir =~ /([a-z0-9\/:_-]+)/i; $outdir = $1;
+
+  my ($txt, $encoding, $output) = @ARGV;
+  $txt = decode ($encoding || 'utf8', $txt);
+
+  binmode STDOUT, ':utf8' or die ("binmode STDOUT, ':utf8' failed: $!");
+
+  my $graph = $parser->from_text($txt);		# create a graph object
+
+  # the "\n" prevents double line nr double line nr reports
+  if ($parser->error())
+    {
+    my $error = $parser->error()."##ERROR2##\n";
+    # quote for HTML output
+    $error =~ s/&/&amp;/;
+    $error =~ s/</&lt;/;
+    $error =~ s/>/&gt;/;
+    die ($error);
+    }
+
+  # if user specified output like "graph { output: ascii; }", use it
+  $output = $graph->attribute('graph', 'output') unless $output;
+  # fallback to html output
+  $output = 'html' unless $output;
+  die ("Invalid output format '$output'##ERROR3##\n") if $output !~ /^(ascii|boxart|graphviz|html|svg|debug)\z/i;
+
+  if ($output =~ /html/i)
+    {
+    my $css = "<style type='text/css'><!--\n" . $graph->css() . "--></style>";
+    my $html = $graph->as_html();
+
+    #$html =~ s/\n+\z//;			# remove trailing "\n"
+    #$html =~ s/^\n+//;				# remove leading "\n"
+
+    # mediawiki doesn't like leading spaces and empty lines in the CSS
+    $css =~ s/(^|\n)\s+/$1/g;			# spaces at front
+
+    # it also seems not to like to longs stretches of CSS :-/
+    $css =~ s/\n+//g;				# remove all newlines
+    $html =~ s/\n+//g;				# remove all newlines
+
+    print $css . $html;
+    }
+  elsif ($output =~ /debug/i)
+    {
+    print '<pre>' . $graph->as_debug() . '</pre>';
+    }
+  elsif ($output =~ /boxart/i)
+    {
+    # output as Unicode box drawing, suitable for embedding into HTML
+    print $graph->as_boxart_html();
+    }
+  elsif ($output =~ /ascii/i)
+    {
+    # output as ASCII, suitable for embedding into HTML
+    print $graph->as_ascii_html();
+    }
+  else
+    {
+    require Digest::SHA1;		# for hashing to a file name
+
+    # Hash the graph text representation to the filename
+    # Different graphs that are equivalent will hash to the same file
+    # name, thus saving us space.  
+    my $sha1 = Digest::SHA1->new();
+    $sha1->add(encode('utf-8',$graph->as_txt()));
+    my $hash = $sha1->hexdigest;
+
+    # AF09123... => AF/09/AF09123...
+    require File::Spec;
+    my $dir = File::Spec->catdir($outdir, substr($hash,0,2));
+    mkdir $dir, 0775 unless -d $dir;
+
+    $dir = File::Spec->catdir($dir, substr($hash,2,2));
+    mkdir $dir, 0775 unless -d $dir;
+
+    my $ext = $format; $ext = 'svg' if $output =~ /svg/i;
+    my $file = File::Spec->catfile($dir, "$hash.$ext");
+    my $code;
+
+    if ($output =~ /svg/i)
+      {
+      # output as SVG, suitable for embedding into HTML
+      my $svg = $graph->as_svg_file();
+  
+      my $info = $graph->svg_information();
+      # use sensible defaults, and sane values
+      my $w = abs(int($info->{width} || 200)) + 1;
+      my $h = abs(int($info->{height} || 100)) + 1;
+
+      # Cairo has problems with bigger SVGs
+      my $max = 32*1024 -1;
+      $w = $max if $w > $max;
+      $h = $max if $h > $max;
+
+      {
+        open my $fh, ">$file" or die ("Can't write to '$file': $!##ERROR4##\n");
+        binmode $fh, ':utf8';
+        print $fh $svg;
+        close $fh or die ("Cannot close '$file': $!##ERROR4##\n");
+        chmod 0775, $file;		# in case of webserver running as nobody
+      }
+
+      $code = '<object type="image/svg+xml" width="##w##" height="##h##" data="##prefix####file##">' . "\n" .
+		'<b>Your browser does not yet support <a title="Scalable Vector Graphics" href="/wiki/SVG">SVG</a>.</b>' . "\n" .
+		"</object>\n";
+
+      $code =~ s/##w##/$w/g;
+      $code =~ s/##h##/$h/g;
+      }
+    else
+      {
+      # PNG, JPG etc support via dot etc
+
+      my $gr = $graph->as_graphviz();
+
+      # see if we could write the file
+      {
+        open my $fh, ">$file" or die ("Can't write to '$file': $!##ERROR4##\n");
+        close $fh or die ("Cannot close '$file': $!##ERROR4##\n");
+        unlink $fh;
+      }
+
+      # make the ENV safe
+      local %ENV = ( path => '/usr/bin:/usr/local/bin:/bin:/' );
+
+      my $dot_file = $file; $dot_file =~ s/\.[^\.]+\z/.dot/;
+
+      {
+        open my $fh, ">$dot_file" or die ("Can't write to temp. dot file '$dot_file' $!##ERROR4##\n");
+        binmode $fh, ':utf8';
+        print $fh $gr;
+        close $fh or die ("Cannot close temp. dot file '$dot_file': $!##ERROR4##\n");
+      }
+
+      my $cmd = "$dot -T$format -o '$file' -Tcmapx '$dot_file'";
+      my $image_map = `$cmd`;
+      chmod 0775, $file;		# in case of webserver running as nobody
+      # cleanup temp. file
+      unlink $dot_file;
+
+      my $id = $graph->id() || '0';
+      $image_map =~ s/(id|name)="GRAPH_0"/$1="GRAPH_$id"/g;
+
+      my $label = $graph->label() || 'Unnamed graph';
+
+      $code = $image_map . "<img usemap=\"#GRAPH_$id\" alt=\"$label\" title=\"$label\" src=\"##prefix####file##\" />\n";
+      }
+
+    $code =~ s/##file##/$file/g;
+    $code =~ s/##prefix##/$wiki_prefix/g;
+    print $code;
+    }
+
+  # disable alarm
+  alarm 0;
+  };
+
+if ($@) 
+  {
+  # propagate unexpected errors
+  my $error = $@; $error =~ s/\s*##ERROR(\d+)##\s*//; my $code = $1 || 2;
+  $error .= "." unless $error =~ /\.\z/;
+  $error =~ s/\.\s*\z/. /;
+  $error .= 'See the <a alt="Graph::Easy online manual" title="Graph::Easy online manual" href="'
+    . "$error_page\#$code" .'">manual</a> for help.';
+  print "<strong class='error'>graphcnv error:</strong> $error\n";
+  }
+
+1;
+
+__END__
+
+=pod
+
+=head1 NAME
+
+graphcnv - convert textual graph description to ASCII/HTML/SVG/PNG
+
+=head1 SYNOPSIS
+
+	perl -T graphcnv graph-as-text [encoding] [outputtype]
+
+Examples:
+
+	perl -T graphcnv '[ Bonn ] --> [ Berlin ]' 'utf-8'
+	perl -T graphcnv '[Bonn] --> [Berlin]' 'utf-8' 'ascii'
+
+=head1 DESCRIPTION
+
+Turns a given textual graph representation into a pretty graph. Uses
+L<Graph::Easy> behind the scenes to do all the hard work.
+
+=head1 VERSIONS
+
+Please see the CHANGES file for a complete version history.
+
+=head1 LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms of the GPL version2.
+
+See the LICENSE file for information.
+
+=head1 AUTHOR
+
+(c) by Tels bloodgate.com 2005-2006
+
+=head1 SEE ALSO
+
+<L<Graph::Easy>, L<http://bloodgate.com/perl/graph>.
+
+=cut

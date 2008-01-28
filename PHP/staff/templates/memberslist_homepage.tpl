@@ -1,0 +1,1 @@
+<a href="$members[homepage]" target="_blank"><img src="{imagefolder}/www.gif" border=0 alt="$members[username]'s Homepage"></a>

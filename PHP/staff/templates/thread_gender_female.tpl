@@ -1,0 +1,1 @@
+ <img src="{imagefolder}/female.gif" border=0 alt="$posts[username] is a Female">

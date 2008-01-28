@@ -1,0 +1,1 @@
+New Registration at $master_board_name

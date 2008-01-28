@@ -1,0 +1,168 @@
+<html>
+<head>
+<link href="style.css" rel=stylesheet>
+<title>MAP II</title>
+<script language="javaScript">
+
+function setVariables(){
+y1=-50;ob=1;max=20 // this max sets the distance from the top of the page
+
+if (navigator.appName == "Netscape") {
+v=".top=";h=".left=";dS="document.";sD="";
+y="window.pageYOffset";x="window.pageXOffset";iW="window.innerWidth";iH="window.innerHeight"
+}
+else {h=".pixelLeft=";v=".pixelTop=";dS="";sD=".style";
+y="document.body.scrollTop";x="document.body.scrollLeft";iW="document.body.clientWidth";iH="document.body.clientHeight"
+}
+
+
+object="object1";
+checkLocationA()
+}
+movex=0,movey=0,xdiff=0,ydiff=0,ystart=0,xstart=0
+
+
+function checkLocation(){
+//  innerX=eval(iW)-115 // place to the right
+ innerX=21 // controls the horizontal from the left side of the page
+
+//  innerY=eval(iH)-35 // place at the bottom
+  innerY=16 // controls the verticle from the top of the page
+if (document.layers){innerY-=10;innerX-=10}
+yy=eval(y);
+xx=eval(x);
+ydiff=ystart-yy;
+xdiff=xstart-xx;
+if ((ydiff<(-0.01))||(ydiff>(0.01))) movey=Math.round(ydiff/10),ystart-=movey
+if ((xdiff<(-0.01))||(xdiff>(0.01))) movex=Math.round(xdiff/10),xstart-=movex
+
+
+N=(document.layers)?1:0
+V=(N) ? 4:5
+if (V==4){
+object="object1"
+eval(dS+object+sD+v+(ystart+innerY+10));
+eval(dS+object+sD+h+(xstart+innerX+10));
+//object="object2"
+//eval(dS+object+sD+v+(ystart+innerY+spread+10));
+//eval(dS+object+sD+h+(xstart+innerX+10));
+//object="object3"
+//eval(dS+object+sD+v+(ystart+innerY+spread*2+10));
+//eval(dS+object+sD+h+(xstart+innerX+10));
+//object="object4"
+//eval(dS+object+sD+v+(ystart+innerY+spread*3+10));
+//eval(dS+object+sD+h+(xstart+innerX+10));
+//object="object5"
+//eval(dS+object+sD+v+(ystart+innerY+spread*4+10));
+//eval(dS+object+sD+h+(xstart+innerX+10));
+
+
+//eval(dS + objectX + sD + v + y);
+}
+else{
+object=document.getElementById('object1')
+object.style.top=ystart+innerY
+object.style.left=xstart+innerX
+
+//object=document.getElementById('object2')
+//object.style.top=ystart+innerY+spread
+//object.style.left=xstart+innerX
+
+//object=document.getElementById('object3')
+//object.style.top=ystart+innerY+spread*2
+//object.style.left=xstart+innerX
+
+//object=document.getElementById('object4')
+//object.style.top=ystart+innerY+spread*3
+//object.style.left=xstart+innerX
+
+//object=document.getElementById('object5')
+//object.style.top=ystart+innerY+spread*4
+//object.style.left=xstart+innerX
+
+
+
+
+
+//object=document.getElementById('object2')
+//object.style.top=50+innerY
+//object.style.left=50+innerX
+
+}
+
+
+
+
+setTimeout("checkLocation()",10)}
+
+function checkLocationA(){
+ystart=eval(y)+5;
+xstart=eval(x)+5;}
+spread=40
+function scrollOn(){
+items=1
+if (ob<=items){
+objectX="object"+ob;
+y1+=10;
+
+N=(document.layers)?1:0
+V=(N) ? 4:5
+if (V==4){
+eval(dS + objectX + sD + v + y1);}
+else{
+object=document.getElementById(objectX)
+object.style.top=y1}
+
+
+//eval(dS + objectX + sD + v + y);
+
+
+        if (y1<max) xx=setTimeout ("scrollOn()",20)
+        else y1=-50, max+=spread, ob+=1, xx=setTimeout("scrollOn()",20) // this max sets the spacing
+        }
+if (ob>items){clearTimeout(xx);checkLocation();}
+}
+
+
+
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+<body onload="setVariables();scrollOn()">
+<div id="object1" style="position:absolute; width:100%; visibility:show; left:10px; top:10px; z-index:20;">
+	<div class="alpha" id="nav" style="position:absolute; width:100px; height:100px; z-index:20; left: 10px; top: 0px;">
+	Info:
+	</div>
+	<div class="alpha" id="mainnav" style="position:absolute; width:80%; height:100px; z-index:20; left: 115px; top: 0px;">
+	Mainnav:
+	</div>
+</div>
+
+
+<div style="position:absolute; top: 540px; left: 540px; z-index:1;">
+	<img src="images/sonne.gif" width="164" alt="sonne" title="sonne" border="0">
+</div>
+
+<div style="position:absolute; top: 655px; left: 855px; z-index:2;">
+	<img src="images/mars_tile_small.png" alt="planet" title="planet" border="0">
+</div>
+
+<div style="position:absolute; top: 615px; left: 815px; z-index:2;">
+	<img src="images/planet.gif" width="50" height="50" alt="planet" title="planet" border="0">
+</div>
+
+<div id="table" style="position:absolute; z-index:0; left: 20px; top: 145px; z-index:0;">
+	<table background="images/trans_tiles_small.png" height="800" width="1280"><tr><td></td></tr></table><br />
+</div>
+</body>
+</html>

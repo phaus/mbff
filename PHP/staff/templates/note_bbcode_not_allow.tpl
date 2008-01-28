@@ -1,0 +1,1 @@
+BBCode is <b>not</b> allowed<br>

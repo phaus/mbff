@@ -1,0 +1,1 @@
+New Thread in Forum: $board[title]

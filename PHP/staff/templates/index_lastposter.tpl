@@ -1,0 +1,1 @@
+<b><a href="profile.php?userid=$boards[lastposterid]&sid=$session[hash]">$boards[lastposter]</a></b>

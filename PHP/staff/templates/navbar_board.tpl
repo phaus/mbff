@@ -1,0 +1,1 @@
+ » <a href="board.php?boardid=$board[boardid]&sid=$session[hash]">$board[title]</a>

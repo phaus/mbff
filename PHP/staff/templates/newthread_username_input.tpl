@@ -1,0 +1,1 @@
+<input class="input" type="text" name="guestname" value="$guestname" SIZE=20 MAXLENGTH=50>

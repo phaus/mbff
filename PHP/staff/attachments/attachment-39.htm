@@ -1,0 +1,89 @@
+<script language="javascript" type="text/javascript">function count_letters(field, countfield, limit){
+
+countfield.value = field.value.length;
+if(field.value.length < limit)
+{
+    countfield.style.backgroundColor="red";
+} else {
+    countfield.style.backgroundColor="mediumspringgreen";
+}
+}</script><form name="formular" method="post" action="" enctype="multipart/form-data">
+<input type="hidden" name="sid" value="1c08d490163e01d84ea96f9073c80a9d" />
+<input type="hidden" name="exp" value="23432423" onfocus="blur()" onchange="if (formular.exp.value == 0) { formular.range_addinput_fields_3.disabled = true; } else if (formular.exp.value == 1)   if (formular.input_fields_3.value < 40) formular.range_addinput_fields_3.disabled = false; " />
+<table >
+<tr>
+	<td width="10"></td><td><!--
+ Form formular generiert:
+ am: 20.03.2005, 11:23
+ von: /work/mbff/test_formular.php
+ --></td>
+</tr>
+<tr>
+	<td nowrap valign="top">Manapool</td>
+	<td><input type="input" name="mana" value="100" size="3" readonly = "readonly" onfocus="blur()" onchange="if (formular.mana.value == 0) { formular.range_addinput_fields_2.disabled = true; } else if (formular.mana.value == 1)   if (formular.input_fields_2.value < 20) formular.range_addinput_fields_2.disabled = false; " /></td>
+</tr>
+<tr>
+	<td nowrap valign="top">Test1</td>
+	<td><script language="JavaScript" type="text/javascript">if (formular.input_fields_2.value == 5) formular.range_subinput_fields_2.disabled = true; if (formular.input_fields_2.value == 20) formular.range_addinput_fields_2.disabled = true;</script>
+<input name="range_subinput_fields_2" type="Button" value="-" onclick="if (formular.input_fields_2.value > 5) { formular.input_fields_2.value--;{ formular.mana.value++; formular.mana.onchange(); } if (formular.input_fields_2.value == 5) formular.range_subinput_fields_2.disabled = true; formular.range_addinput_fields_2.disabled = false; }" OnDblClick="if (formular.input_fields_2.value > 5) { formular.input_fields_2.value--;{ formular.mana.value++; formular.mana.onchange(); } if (formular.input_fields_2.value == 5) formular.range_subinput_fields_2.disabled = true; formular.range_addinput_fields_2.disabled = false; }" />
+<input name="input_fields_2" type="text" value="10" size="3" onfocus="blur()" />
+<input name="range_addinput_fields_2" type="Button" value="+" onclick="if (formular.input_fields_2.value < 20 && !(formular.mana.value == 0)) { formular.input_fields_2.value++; { formular.mana.value--; formular.mana.onchange(); } if (formular.input_fields_2.value == 20 formular.range_addinput_fields_2.disabled = true; formular.range_subinput_fields_2.disabled = false; }" ondblclick="if (formular.input_fields_2.value < 20 && !(formular.mana.value == 0)) {  formular.input_fields_2.value++; { formular.mana.value--; formular.mana.onchange(); } if (formular.input_fields_2.value == 20) formular.range_addinput_fields_2.disabled = true; formular.range_subinput_fields_2.disabled = false; }" />
+</td>
+</tr>
+<tr>
+	<td nowrap valign="top">Test2</td>
+	<td><script language="JavaScript" type="text/javascript">if (formular.input_fields_3.value == 5) formular.range_subinput_fields_3.disabled = true; if (formular.input_fields_3.value == 40) formular.range_addinput_fields_3.disabled = true;</script>
+<input name="range_subinput_fields_3" type="Button" value="-" onclick="if (formular.input_fields_3.value > 5) { formular.input_fields_3.value--;{ formular.exp.value++; formular.exp.onchange(); } if (formular.input_fields_3.value == 5) formular.range_subinput_fields_3.disabled = true; formular.range_addinput_fields_3.disabled = false; }" OnDblClick="if (formular.input_fields_3.value > 5) { formular.input_fields_3.value--;{ formular.exp.value++; formular.exp.onchange(); } if (formular.input_fields_3.value == 5) formular.range_subinput_fields_3.disabled = true; formular.range_addinput_fields_3.disabled = false; }" />
+<input name="input_fields_3" type="text" value="20" size="3" onfocus="blur()" />
+<input name="range_addinput_fields_3" type="Button" value="+" onclick="if (formular.input_fields_3.value < 40 && !(formular.exp.value == 0)) { formular.input_fields_3.value++; { formular.exp.value--; formular.exp.onchange(); } if (formular.input_fields_3.value == 40 formular.range_addinput_fields_3.disabled = true; formular.range_subinput_fields_3.disabled = false; }" ondblclick="if (formular.input_fields_3.value < 40 && !(formular.exp.value == 0)) {  formular.input_fields_3.value++; { formular.exp.value--; formular.exp.onchange(); } if (formular.input_fields_3.value == 40) formular.range_addinput_fields_3.disabled = true; formular.range_subinput_fields_3.disabled = false; }" />
+</td>
+</tr>
+<tr>
+	<td nowrap valign="top">Bewertung</td>
+	<td>
+<select name="input_fields_4[]" size="4" multiple>
+		<option value="1" >ja</option>
+		<option value="2" >eher ja</option>
+		<option value="3" >eher nein</option>
+		<option value="4" >nein</option>
+		<option value="5" >weiß nicht</option>
+	</select></td>
+</tr>
+<tr>
+	<td nowrap valign="top">Stimmen Sie überein ?</td>
+	<td>
+		<input type="radio" name="input_fields_5" value="1"  />&nbsp;ja<br  />
+		<input type="radio" name="input_fields_5" value="2"  />&nbsp;eher ja<br  />
+		<input type="radio" name="input_fields_5" value="3" checked="checked" />&nbsp;eher nein<br  />
+		<input type="radio" name="input_fields_5" value="4"  />&nbsp;nein<br  />
+		<input type="radio" name="input_fields_5" value="5"  />&nbsp;weiß nicht<br  />
+</td>
+</tr>
+<tr>
+	<td nowrap valign="top">TXT TEST</td>
+	<td><textarea cols="40" rows="4" name="input_fields_6" readonly = "readonly">TEST.......</textarea></td>
+</tr>
+<tr>
+	<td nowrap valign="top">TXT TEST</td>
+	<td><textarea cols="40" rows="4" name="input_fields_7" >TEST.......</textarea></td>
+</tr>
+<tr>
+	<td nowrap valign="top">Story</td>
+	<td><textarea cols="40" rows="4" name="input_fields_8"  onKeyDown="count_letters();" onKeyUp="count_letters(formular.input_fields_8,formular.input_fields_8_count, 5000);"></textarea></td>
+</tr>
+<tr><td colspan="2" align="right"><input style="background: red;" readonly="readonly" type="text" name="input_fields_8_count" size="4" value="0"> Zeichen gezählt.</td>
+</tr>
+<tr>
+	<td nowrap valign="top">Passwort:</td>
+	<td><input type="password" name="input_fields_9" value="" size="20" maxlenght="100"  /></td>
+</tr>
+<tr>
+	<td nowrap valign="top">Userbild</td>
+	<td><input type="file" name="input_fields_10" /></td>
+</tr>
+<tr>
+	<td colspan="2" align="right"><input type="reset" name="reset" value="abbrechen" /><input type="submit" name="submit" value="senden" /></td>
+</tr>
+</table>
+</form>
+

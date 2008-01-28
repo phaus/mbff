@@ -1,0 +1,1 @@
+<input type="radio" name="iconid" value="$row[iconid]" $ICONselected[$row_iconid]>&nbsp;&nbsp;<img src="$row[iconpath]" alt="$row[icontitle]">&nbsp;&nbsp;&nbsp;&nbsp;

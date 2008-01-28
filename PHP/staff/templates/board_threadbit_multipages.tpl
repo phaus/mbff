@@ -1,0 +1,1 @@
+<smallfont> ( <img src="{imagefolder}/multipage.gif">$multipage$multipages_lastpage)</font>

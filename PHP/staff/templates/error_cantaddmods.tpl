@@ -1,0 +1,1 @@
+You cannot add Moderators or Administrators to your Ignore list.

@@ -1,0 +1,1 @@
+<a href="mailto:$posts[email]"><img src="{imagefolder}/email.gif" border=0 alt="Send an Email to $posts[username]"></a>

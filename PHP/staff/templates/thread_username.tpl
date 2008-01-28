@@ -1,0 +1,1 @@
+<a href="profile.php?userid=$posts[userid]&sid=$session[hash]">$posts[username]</a>

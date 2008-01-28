@@ -1,0 +1,1 @@
+<b>... <a href="$link&page=$pages">last &raquo;</a></b>

@@ -1,0 +1,1 @@
+<input type="radio" name="avatarid" value="$row[avatarid]"$checked>$avatarchoice
